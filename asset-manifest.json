@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9a20fa3.css",
+    "main.js": "/static/js/main.f049c758.js",
+    "static/media/react.png": "/static/media/react.9921f1328c0534dde9a3.png",
+    "static/media/ynk.jpg": "/static/media/ynk.52f4ae7e8edc92b23ac9.jpg",
+    "static/media/htnbq.jpg": "/static/media/htnbq.afdfc3b5132d9c30d970.jpg",
+    "static/media/luffy.jpg": "/static/media/luffy.81c5e0c443c2f230b806.jpg",
+    "static/media/selfie.jpg": "/static/media/selfie.575c1b044ebc4f79abe7.jpg",
+    "static/media/aspNet.png": "/static/media/aspNet.6873d6adcfd4eb1d2513.png",
+    "static/media/mail.png": "/static/media/mail.44a2b4d26ddfb37c434c.png",
+    "static/media/github.svg": "/static/media/github.d3042e4cab08d9b63998492137d5dc52.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.0fed96e45bc2792157548c3130a3f1fd.svg",
+    "index.html": "/index.html",
+    "static/media/phone.svg": "/static/media/phone.435dedebd15dde99451591a4ad4ad59b.svg",
+    "static/media/Logo.svg": "/static/media/Logo.44fce5c5968048576bdde5d0514cdf17.svg",
+    "main.d9a20fa3.css.map": "/static/css/main.d9a20fa3.css.map",
+    "main.f049c758.js.map": "/static/js/main.f049c758.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9a20fa3.css",
+    "static/js/main.f049c758.js"
+  ]
+}
