@@ -1,0 +1,73 @@
+
+.heroBanner{
+    background-color: #372523;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 36px; 
+    margin-bottom: -212px;
+    z-index: 2000;
+    position: relative;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    row-gap: 2rem;
+}
+
+.heroBannerLogo{
+    width: 160px;
+}
+
+.navBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navItem{
+    background-color: #372523;
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+    width: 48px;
+    text-align: center;
+    color: #E5CEB2;
+    transition: background-color 250ms;
+    text-decoration-line: none;
+    font-family: "Inika", sans-serif;
+}
+.navItem:hover{
+    background-color: #8C2B2B;
+}
+.navItem:active{
+    background-color: #b04949;
+    transition: background-color 100ms;
+}
+
+.MuiPaper-root{
+    background-color: #372523 !important;
+}
+
+.css-1384nzf-MuiMobileStepper-dots{
+    background-color: transparent !important;
+    top: -7vh;
+    position: relative;
+}
+
+.css-rh92k-MuiPaper-root-MuiMobileStepper-root{
+    background-color: #372523 !important;
+    height: 10px !important;
+}
+
+.css-114p2tk-MuiMobileStepper-dot{
+    background-color: #B38574 !important; 
+}
+
+.MuiMobileStepper-dotActive{
+    background-color: #8C2B2B !important; 
+}
+
+.css-yp9osx-MuiTypography-root{
+    font-size:calc(12px + 4vw) !important;
+}
