@@ -10,16 +10,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const App = () => {
     return (
         <>
-        <Router>
-            <Routes>
-                <Route exact path="/" element={<><HeroBanner/>
-                    <About/>
-                    <Latest/>
-                    <Skills/>
-                    <Portfolio/>
-                    <Contact/></>}/>
-            </Routes>
-        </Router>
+        <HeroBanner/>
+        <About/>
+        <Latest/>
+        <Skills/>
+        <Portfolio/>
+        <Contact/>
         </>
     )
 }

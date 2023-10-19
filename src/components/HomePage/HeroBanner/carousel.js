@@ -63,7 +63,7 @@ function SwipeableTextMobileStepper() {
           top: 50,
           bgcolor: 'transparent',
           position: 'relative',
-          top: '55vh',
+          top: '60vh',
           left: '15vw',
           width: '65vw',
         }}
