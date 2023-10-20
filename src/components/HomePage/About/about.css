@@ -30,7 +30,7 @@
 
 .text{
     width:30vw;
-    min-width: 400px;
+    min-width: 380px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -105,7 +105,7 @@
         padding: 0.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        align-items:flex-start;
+        align-self:center;
     }
     .selfie{
         height: 500px;
