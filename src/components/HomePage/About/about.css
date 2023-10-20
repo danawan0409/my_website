@@ -28,6 +28,17 @@
     padding: 5rem;
 }
 
+/*MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-s86w9h
+   MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-s86w9h
+   MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 css-1pvj1hb
+   MuiTypography-root MuiTypography-body1 css-hf86q4
+   MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-61cffq-MuiTypography-root
+   MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiMobileStepper-root MuiMobileStepper-positionStatic css-10asl6r
+   MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge Mui-disabled MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge css-13fwv13
+   MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeLarge MuiButton-textSizeLarge css-13fwv13
+   MuiButtonBase-root MuiButton-root MuiButton-body2 MuiButton-body2Text.secondary MuiButton-sizeMedium MuiButton-body2SizeMedium MuiButton-root MuiButton-body2 MuiButton-body2Text.secondary MuiButton-sizeMedium MuiButton-body2SizeMedium css-69fqtn-MuiButtonBase-root-MuiButton-root
+   */
+
 .text{
     width:35vw;
     min-width: 300px;

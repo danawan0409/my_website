@@ -77,9 +77,6 @@ function SwipeableTextMobileStepper() {
           pl: 1,
           bgcolor: 'transparent',
           position: 'relative',
-          top: 'calc(100vh - 45vh )',
-          left: '16vw',
-          width: '65vw',
         }}
       >
         <Typography sx={{typography: 'h2', zIndex: 'tooltip', color:'#E5CEB2', fontFamily:'Inika', fontSize: "calc(3vh + 3vw)"}}>{images[activeStep].label}</Typography>
@@ -97,11 +94,10 @@ function SwipeableTextMobileStepper() {
                 component="img"
                 sx={{
                   height: '105vh',
-                  minHeight: '640px',
+                  minHeight: '600px',
                   display: 'block',
-                  width: '100vw',
-                  overflow: 'hidden',
                   width: '100%',
+                  overflow: 'hidden',
                   objectFit: 'cover',
                   opacity: '0.5',
                 }}
@@ -121,10 +117,8 @@ function SwipeableTextMobileStepper() {
             size="large"
             onClick={handleNext}
             sx={{
-                top: 'calc(-100vh + 55vh)',
                 color: '#E5CEB2',
                 fontFamily: 'Inika', 
-                fontSize: 'calc(1vh + 1vw)',
                 padding: '0',
               }}
             disabled={activeStep === maxSteps - 1}
@@ -141,10 +135,8 @@ function SwipeableTextMobileStepper() {
           <Button size="large" 
             onClick={handleBack} 
             sx={{
-              top: 'calc(-100vh + 55vh)',
               color: '#E5CEB2',
               fontFamily: 'Inika', 
-              fontSize: 'calc(1vh + 1vw)',
               padding: '0'
               }}
             disabled={activeStep === 0}>

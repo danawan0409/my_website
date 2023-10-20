@@ -55,6 +55,19 @@
     background-color: #8C2B2B !important; 
 }
 
+.MuiButton-text{
+    top: calc(-100vh + 60vh);
+    font-size: 36px;
+}
+
+.MuiTypography-body1{
+    position: relative;
+    top: calc(100vh - 45vh);
+    left: 16vw;
+    width: 65vw;
+}
+
+
 @media (max-width: 950px) {
     .navbar{
         top: 0; 
@@ -79,6 +92,12 @@
     .heroBannerLogo{
         width: 120px;
     }
+    .MuiButton-text{
+        top: -220px;
+    }
+    .MuiTypography-body1{
+        top: 320px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -89,6 +108,12 @@
         padding: 0.5rem 1rem 0.5rem 1rem;
         width: 7vw;
         font-size: 12px;
+    }
+    .MuiButton-text{
+        font-size: 12px !important;
+    }
+    .MuiTypography-body1{
+        font-size: 24px !important;
     }
 }
 
