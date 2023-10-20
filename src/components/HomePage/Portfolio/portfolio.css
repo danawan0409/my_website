@@ -24,10 +24,11 @@
 
 .portfolioCards{
     display: grid;
-    padding: 2rem;
-    max-width: 75vw;
+    padding: 3vw;
+    max-width: 80vw;
     min-width: 400px; 
     grid-template-columns: repeat(auto-fit, minmax(345px,1fr));
+    justify-items: center;
 }
 
 .portfolioSeeMore{
@@ -36,7 +37,6 @@
     align-self: flex-end;
     position: relative;
     bottom: 1.5rem;
-    right: 1.5rem;
     border: none;
     background-color: #8C2B2B;
     cursor: pointer;
@@ -56,15 +56,31 @@
     font-family: "Inika", sans-serif;
 }
 
-.css-j1nai1-MuiPaper-root-MuiCard-root{
-    background-color: #8C2B2B !important;
-    box-shadow: none !important;
+@media (max-width: 950px) {
+    .portfolioCards{
+        grid-template-columns: repeat(1, minmax(345px,1fr));
+    }
+    .portfolioSeeMore{
+        align-self: center;
+        left: 1vw;
+        margin: 1.5rem;
+    }
 }
 
-.css-dts7ar-MuiCardActions-root{
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.3), 0px 1px 1px 0px rgba(0,0,0,0.3), 0px 1px 3px 0px rgba(0,0,0,0.3);
+@media (max-width: 600px) {
+    .portfolioCardbox{
+        background-color: transparent !important;
+    }
+    .portfolioSeeMore{
+        background-color: #E5CEB2;
+    }
+    .portfolioSeeMore:hover{
+        background-color: #c5ada4;
+    }
+    .portfolioSeeMore:active{
+        background-color: #A18A6E;
+    }
+    .moreText{
+        color: #372523;
+    }
 }
-
-.css-69fqtn-MuiButtonBase-root-MuiButton-root{
-    text-transform: none !important;
-} 

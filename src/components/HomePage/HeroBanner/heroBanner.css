@@ -12,8 +12,8 @@
     z-index: 2000;
     position: relative;
     flex-wrap: wrap;
-    column-gap: 10rem;
-    row-gap: 2rem;
+    row-gap: 5vw;
+    column-gap: 5vw;
 }
 
 .heroBannerLogo{
@@ -45,29 +45,39 @@
     transition: background-color 100ms;
 }
 
-.MuiPaper-root{
-    background-color: #372523 !important;
-}
-
-.css-1384nzf-MuiMobileStepper-dots{
+.MuiMobileStepper-root{
     background-color: transparent !important;
-    top: -7vh;
+    bottom: 75px;
     position: relative;
-}
-
-.css-rh92k-MuiPaper-root-MuiMobileStepper-root{
-    background-color: #372523 !important;
-    height: 10px !important;
-}
-
-.css-114p2tk-MuiMobileStepper-dot{
-    background-color: #B38574 !important; 
 }
 
 .MuiMobileStepper-dotActive{
     background-color: #8C2B2B !important; 
 }
 
-.css-yp9osx-MuiTypography-root{
-    font-size:calc(12px + 4vw) !important;
+@media (max-width: 950px) {
+    .navbar{
+        top: 0; 
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+    .heroBannerLogo{
+        width: 120px;
+    }
+    .navItem{
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        width: 48px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .heroBannerLogo{
+        width: 80px;
+    }
+    .navItem{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        width: 40px;
+        font-size: 12px;
+    }
 }

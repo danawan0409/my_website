@@ -12,8 +12,23 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import bg1 from '../../../assets/react.png';
 import bg2 from '../../../assets/aspNet.png';
 import bg3 from '../../../assets/ynk.jpg';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      four: 0,
+      three: 600,
+      two: 950,
+      one: 1300,
+    },
+  },
+});
+
 
 const images = [
   {
@@ -58,17 +73,16 @@ function SwipeableTextMobileStepper() {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          height: 50,
-          pl: 2,
-          top: 50,
+          height: 0,
+          pl: 1,
           bgcolor: 'transparent',
           position: 'relative',
-          top: '60vh',
-          left: '15vw',
+          top: 'calc(100vh - 45vh )',
+          left: '16vw',
           width: '65vw',
         }}
       >
-        <Typography sx={{typography: 'h1', zIndex: 'tooltip', color:'#E5CEB2', fontFamily:'Inika', }}>{images[activeStep].label}</Typography>
+        <Typography sx={{typography: 'h2', zIndex: 'tooltip', color:'#E5CEB2', fontFamily:'Inika', fontSize: "calc(3vh + 3vw)"}}>{images[activeStep].label}</Typography>
       </Paper>
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -82,10 +96,10 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 sx={{
-                  height: '100vh',
-                  minHeight: '480px',
+                  height: '105vh',
+                  minHeight: '640px',
                   display: 'block',
-                  maxWidth: '120rem',
+                  width: '100vw',
                   overflow: 'hidden',
                   width: '100%',
                   objectFit: 'cover',
@@ -107,10 +121,11 @@ function SwipeableTextMobileStepper() {
             size="large"
             onClick={handleNext}
             sx={{
-                top: '-45vh',
+                top: 'calc(-100vh + 55vh)',
                 color: '#E5CEB2',
                 fontFamily: 'Inika', 
-                fontSize: '1.5rem'
+                fontSize: 'calc(1vh + 1vw)',
+                padding: '0',
               }}
             disabled={activeStep === maxSteps - 1}
           >
@@ -126,10 +141,11 @@ function SwipeableTextMobileStepper() {
           <Button size="large" 
             onClick={handleBack} 
             sx={{
-              top: '-45vh',
+              top: 'calc(-100vh + 55vh)',
               color: '#E5CEB2',
               fontFamily: 'Inika', 
-              fontSize: '1.5rem',
+              fontSize: 'calc(1vh + 1vw)',
+              padding: '0'
               }}
             disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (

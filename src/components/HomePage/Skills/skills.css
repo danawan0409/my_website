@@ -5,11 +5,12 @@
     align-items: center;
     padding: 5rem;
     color: #E5CEB2;
+    padding-left:5vw;
+    padding-right:5vw;
 }
 
 .skillsBox{
     display: flex;
-    max-width: 75vw;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -46,4 +47,24 @@
 .skillsList{
     font-family: "Imprima";
     font-size: 24px;
+}
+
+@media (max-width: 1300px) {
+    .categories{
+        display: grid;
+        padding: 2rem;
+        max-width: 80vw;
+        min-width: 400px; 
+        grid-template-columns: repeat(2, minmax(345px,1fr));
+    }
+}
+
+@media (max-width: 950px) {
+    .categories{
+        display: grid;
+        padding: 2rem;
+        max-width: 80vw;
+        min-width: 400px; 
+        grid-template-columns: repeat(1, minmax(345px,1fr));
+    }
 }

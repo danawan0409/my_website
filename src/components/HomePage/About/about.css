@@ -30,13 +30,14 @@
 
 .text{
     width: 30vw;
-    min-width: 430px;
+    min-width: 400px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
+    padding: 5rem;
 }
 
-.btnText{
+.resumeTxt{
     font-family: "Inika", sans-serif;
 }
 
@@ -44,7 +45,6 @@
     background-color: #E5CEB2;
     color: #372523;
     cursor: pointer;
-    width: fit-content;
     padding: 0.75rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -59,4 +59,32 @@
 
 .btnResume:active{
     background-color: #B38574;
+}
+
+@media (max-width: 1300px) {
+    .text{
+        padding-bottom: 2rem;
+    }
+    .selfie{
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .aboutTitle{
+        font-size: 3rem;
+        height: 6rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    .resumeTxt{
+        font-size: 0.75rem;
+    }
+    .btnResume{
+        padding: 0.75rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    
 }

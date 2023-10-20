@@ -12,13 +12,12 @@ export default function MediaCard6() {
   return (
     <Card sx={{ maxWidth: 345, padding: '1rem', bgcolor:'#E5CEB2'}}>
       <CardMedia
-        sx={{ height: 300,}}
+        sx={{ height: 300, }}
         image={bg1}
         title="green iguana"
       />
       <CardActions
         sx={{
-          bgcolor: '#372523',
           height: '4rem', 
           paddingTop: '1rem',
           paddingBottom: '1rem',
