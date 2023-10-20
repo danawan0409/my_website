@@ -91,3 +91,11 @@
         font-size: 12px;
     }
 }
+
+@media (max-width: 500px) {
+    .navItem{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        width: 7vw;
+        font-size: 10px;
+    }
+}

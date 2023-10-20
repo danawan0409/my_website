@@ -29,8 +29,8 @@
 }
 
 .text{
-    width:30vw;
-    min-width: 380px;
+    width:35vw;
+    min-width: 300px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -94,9 +94,10 @@
     .aboutTitle{
         font-size: 2rem;
         height: 4rem;
+        padding-left: 1rem;
     }
     .content{
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
     .resumeTxt{
         font-size: 0.5rem;
@@ -108,7 +109,7 @@
         align-self:center;
     }
     .selfie{
-        height: 500px;
-        width: 375px;
+        height: 440px;
+        width: 330px;
     }
 }
