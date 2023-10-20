@@ -27,7 +27,6 @@
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    font-size: 24px;
 }
 
 .skillCategory{
@@ -45,7 +44,7 @@
 }
 
 .skillsList{
-    font-family: "Imprima";
+    font-family: "Imprima", sans-serif;
     font-size: 24px;
 }
 
@@ -66,5 +65,28 @@
         max-width: 80vw;
         min-width: 400px; 
         grid-template-columns: repeat(1, minmax(345px,1fr));
+    }
+    .skillsTitle{
+        font-size: 44px;
+        height: 1rem;
+    }
+    .skillCategory{
+        font-size: 32px;
+    }
+    .skillsList{
+        font-size: 24px;
+    }
+}
+@media (max-width: 600px) {
+    .skillsTitle{
+        font-size: 36px;
+        height: 1rem;
+    }
+    
+    .skillCategory{
+        font-size: 24px;
+    }
+    .skillsList{
+        font-size: 18px;
     }
 }

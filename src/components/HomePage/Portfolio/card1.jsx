@@ -10,7 +10,7 @@ import './portfolio.css';
 
 export default function MediaCard1() {
   return (
-    <Card sx={{ width: 345, padding: '1rem', bgcolor:'transparent', boxShadow: 'none'}}>
+    <Card sx={{ width: 325, padding: '1rem', bgcolor:'transparent', boxShadow: 'none'}}>
       <CardMedia
         sx={{ height: 300,}}
         image={bg1}

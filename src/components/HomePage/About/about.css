@@ -8,10 +8,10 @@
 }
 
 .aboutTitle{
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Inknut Antiqua", sans-serif;
     color: #E5CEB2;
-    height: 10rem;
+    height: 9rem;
 }
 .content{
     font-size: 1.5rem;
@@ -29,7 +29,7 @@
 }
 
 .text{
-    width: 30vw;
+    width:30vw;
     min-width: 400px;
     display: flex; 
     flex-direction: column;
@@ -48,6 +48,7 @@
     padding: 0.75rem;
     padding-left: 3rem;
     padding-right: 3rem;
+    display: flex;
     align-self: flex-end;
     text-decoration-line: none;
     transition: background-color 250ms;
@@ -87,4 +88,27 @@
         padding-right: 1.5rem;
     }
     
+}
+
+@media (max-width: 500px) {
+    .aboutTitle{
+        font-size: 2rem;
+        height: 4rem;
+    }
+    .content{
+        font-size: 0.75rem;
+    }
+    .resumeTxt{
+        font-size: 0.5rem;
+    }
+    .btnResume{
+        padding: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        align-items:flex-start;
+    }
+    .selfie{
+        height: 500px;
+        width: 375px;
+    }
 }
