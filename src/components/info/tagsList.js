@@ -1,0 +1,42 @@
+export const tags = [
+  { id: "c++", name: "C++", type: "language" },
+  { id: "sql", name: "SQL", type: "language" },
+  { id: "postgresql", name: "PostgreSQL", type: "database" },
+  { id: "assembly", name: "Assembly", type: "language" },
+  { id: "node.js", name: "Node.js", type: "framework" },
+  { id: "react", name: "React", type: "framework" },
+  { id: "html", name: "HTML", type: "language" },
+  { id: "css", name: "CSS", type: "language" },
+  { id: "javascript", name: "JavaScript", type: "language" },
+  { id: "docker", name: "Docker", type: "tool" },
+  { id: "aws", name: "AWS", type: "cloud" },
+  { id: "figma", name: "Figma", type: "design" },
+  { id: "github-actions", name: "GitHub Actions", type: "cicd" },
+  { id: "cicd", name: "CI/CD", type: "cicd" },
+  { id: "next.js", name: "Next.js", type: "framework" },
+  { id: "vercel", name: "Vercel", type: "cloud" },
+  { id: "firebase", name: "Firebase", type: "database" },
+  { id: "python", name: "Python", type: "language" },
+  { id: "numpy", name: "NumPy", type: "library" },
+  { id: "pandas", name: "Pandas", type: "library" },
+  { id: "matplotlib", name: "Matplotlib", type: "library" },
+  { id: "chatgpt", name: "ChatGPT API", type: "api" },
+  { id: "twilio", name: "Twilio", type: "api" },
+  { id: "junit", name: "JUnit", type: "testing" },
+  { id: "andriod-studio", name: "Android Studio", type: "tool" },
+  { id: "java", name: "Java", type: "language" }
+];
+
+export const tagTypes = [
+  { type: "language", name: "Language" },
+  { type: "database", name: "Database" },
+  { type: "framework", name: "Framework" },
+  { type: "tool", name: "Tool" },
+  { type: "cloud", name: "Cloud" },
+  { type: "design", name: "Design" },
+  { type: "cicd", name: "CI/CD" },
+  { type: "library", name: "Libraries" },
+  { type: "api", name: "API" },
+  { type: "testing", name: "Testing" }
+];
+
