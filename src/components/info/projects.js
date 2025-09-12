@@ -52,8 +52,8 @@ export const projects = [
     },
     {
         title: 'Easy Eats', 
-        description: "", 
-        link: 'https://github.com/danawan0409/easyeats', 
+        description: "Hack the Valley 2024. Application offering personalized, affordable recipes. We cater to various income levels, dietary restrictions, and time constraints.", 
+        link: 'https://devpost.com/software/easyeats-ipmdvf', 
         tags: ['react', 'html', 'css', 'javascript']
     }, 
     {
