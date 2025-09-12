@@ -37,7 +37,7 @@ export default function Contact() {
 
       <Tooltip content="Open Resume" showArrow interactive>
         <Link
-          href="/resume.pdf"
+          href="./resume.pdf"
           isExternal
           _hover={{ color: "green.500" }}
         >
