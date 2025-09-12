@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 
 export default function Contact() {
   return (
-    <Flex gap={6} justify="center" align="center" py={12}>
+    <Flex gap={6} justify="center" align="center" py={12} ml={4}>
       <Tooltip content="LinkedIn" showArrow interactive>
         <Link
           href="https://www.linkedin.com/in/dana-wan/"
