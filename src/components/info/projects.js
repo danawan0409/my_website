@@ -32,7 +32,7 @@ export const projects = [
     }, 
     {
         title: 'InnerCare', 
-        description: 'A mental health platform designed to help users — especially women — with their mental health. Features a custom dashboard, diary with voice-to-text support, stress metric visualization, and a ChatGPT-powered feedback engine. ', 
+        description: 'A platform designed to help users — especially women — with their mental health. Features voice-to-text support, stress metric visualization, and a ChatGPT-powered feedback engine.', 
         link: 'https://github.com/charmikadi/wie-hack', 
         tags: ['javascript', 'html', 'css', 'react', 'next.js', 'firebase', 'chatgpt', 'twilio']
     },

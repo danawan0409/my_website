@@ -51,10 +51,9 @@ export default function Home() {
         left={0}
         width="200px"
         color="white"
-        bgColor='transparent'
         p={4}
       >
-        <Blockquote.Root>
+        <Blockquote.Root bgColor='transparent'>
           <Blockquote.Content>
             <VStack spacing={4} align="stretch" p={4}>
               {sections.map((sect) => (
@@ -76,7 +75,7 @@ export default function Home() {
       </Box>
 
 
-      <Box minWidth='350px'>
+      <Box minWidth='350px' alignItems='center' justifyContent='center'>
         <Box id="intro">
           <Intro />
         </Box>

@@ -5,7 +5,7 @@ import { Checkbox } from "@chakra-ui/react"; // assuming your current checkbox c
 
 export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType }){
   return (
-    <Box w="250px" p={4} borderWidth="1px" borderRadius="lg" h="fit-content" borderColor='red.300'>
+    <Box w="200px" p={4} borderWidth="1px" borderRadius="lg" h="fit-content" borderColor='red.300'>
       <Text fontWeight="bold" mb={2} color='yellow.50'>
         Filter by Tags
       </Text>

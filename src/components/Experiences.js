@@ -9,9 +9,19 @@ export default function Experiences() {
         <Heading size='4xl' color='yellow.50'> 
             Work Experiences
         </Heading>
-        <Grid templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}  gap={16} p={16} alignItems='center' >
-          <Image src="https://companieslogo.com/img/orig/CIEN.D-042d7f19.png?t=1721039917"/>
-          <Image src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Telus_Health_logo.svg/2560px-Telus_Health_logo.svg.png'/>
+        <Grid templateColumns={{ base: "1fr", xl: "repeat(2, 1fr)" }}  gap={16} p={16} alignItems='center' >
+          <Image
+            src="https://companieslogo.com/img/orig/CIEN.D-042d7f19.png?t=1721039917"
+            width="100%"
+            height="auto"
+            objectFit="contain"
+          />
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Telus_Health_logo.svg/2560px-Telus_Health_logo.svg.png"
+            width="100%"
+            height="auto"
+            objectFit="contain"
+          />
         </Grid>
     </Flex>
   );

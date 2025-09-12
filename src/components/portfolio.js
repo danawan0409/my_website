@@ -96,7 +96,7 @@ export default function PortfolioPage() {
   );
 
   return (
-    <Flex w="full" p={6} gap={6}>
+    <Flex w="full" p={6} gap={4}>
       {/* Filter sidebar */}
       <Filter
           tagTypes={tagTypes}
@@ -146,7 +146,10 @@ export default function PortfolioPage() {
 
         <Flex flexDirection='column' alignItems='center'>
           {/* Card grid */}
-          <SimpleGrid columns={3} spacing={6}>
+          <SimpleGrid 
+            columns={{ base: 1, md: 2, "3xl": 3 }} // 1 column on small, 2 on medium, 3 on xl+
+            spacing={6}
+          >
             {pagedItems.map((item, i) => (
               <PortfolioCard key={i} {...item} />
             ))}

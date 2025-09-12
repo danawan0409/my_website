@@ -2,8 +2,8 @@
 const nextConfig = {
   output: "export",  // <=== enables static exports
   reactStrictMode: true,
-  basePath: '/my_website',
-  assetPrefix: '/my_website/',
+  basePath: '/my_website', //uncomment for deployment
+  assetPrefix: '/my_website/', //uncomment for deployment
 };
 
 export default nextConfig;

@@ -40,18 +40,23 @@ export default function RecentPortfolio() {
                 </IconButton>
                 <AnimatePresence mode="wait" custom={direction}>
                     <MotionFlex
-                    key={page} // re-mounts when page changes
-                    gap={4}
-                    initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: direction < 0 ? -300 : 300, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
+                        key={page} // re-mounts when page changes
+                        initial={{ x: direction > 0 ? 300 : -300, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: direction < 0 ? -300 : 300, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                        wrap="wrap"                           // allow wrapping
+                        justify="center"
+                        direction={{ base: "column", lg: "row" }} // column on small screens
                     >
-                    {visibleCards.map((card, i) => (
-                        <Box key={i} p={4}>
+                        {visibleCards.map((card, i) => (
+                        <Box
+                            key={i}
+                            flex='none' // full width on small, 3 per row on lg
+                        >
                             <PortfolioCard {...card} />
                         </Box>
-                    ))}
+                        ))}
                     </MotionFlex>
                 </AnimatePresence>
                 <IconButton 
