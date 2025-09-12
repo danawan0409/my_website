@@ -37,7 +37,7 @@ function TabsWithProvider() {
   return (
           <Flex width='full' alignItems='flex-start' justifyContent='space-between' px={16}>
             
-            <Image src="/Logo.svg" p='4' id="top"/>
+            <Image src="./Logo.svg" p='4' id="top"/>
 
             <Tabs.RootProvider lazyMount unmountOnExit width='70vw' fitted value={tab} colorPalette='red'>
               <Tabs.List py={12}>
