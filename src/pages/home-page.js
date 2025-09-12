@@ -63,8 +63,9 @@ export default function Home() {
                   onClick={() => scrollTo(sect.id)}
                   variant="ghost"
                   justifyContent="flex-start"
-                  color={active === sect.id ? "teal.300" : "white"}
+                  color={active === sect.id ? "red.100" : "white"}
                   fontWeight={active === sect.id ? "bold" : "normal"}
+                  p={4}
                 >
                   {sect.text}
                 </Button>

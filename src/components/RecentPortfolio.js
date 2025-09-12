@@ -27,9 +27,15 @@ export default function RecentPortfolio() {
 
     return (
         <Flex flexDirection='column' align="center" gap={4} w="full" height='100vh' min-height='500px' justifyContent='center'>
-            <Heading size='4xl'>Recent Projects and Contributions</Heading>
+            <Heading size='4xl' color='yellow.50'>Recent Projects and Contributions</Heading>
             <Flex justifyContent='center' alignItems='center'> 
-                <IconButton onClick={() => paginate(Math.max(0, page - 1))} isDisabled={page === 0}>
+                <IconButton 
+                    onClick={() => paginate(Math.max(0, page - 1))} 
+                    isDisabled={page === 0}
+                    color='red.50'
+                    bgColor='brown.300'
+                    _hover={{ bgColor: 'red.300' }}
+                >
                     <FaAngleLeft/>
                 </IconButton>
                 <AnimatePresence mode="wait" custom={direction}>
@@ -48,7 +54,13 @@ export default function RecentPortfolio() {
                     ))}
                     </MotionFlex>
                 </AnimatePresence>
-                <IconButton onClick={() => paginate(Math.min(maxPage, page + 1))} isDisabled={page === maxPage}>
+                <IconButton 
+                    onClick={() => paginate(Math.min(maxPage, page + 1))} 
+                    isDisabled={page === maxPage}
+                    color='red.50'
+                    bgColor='brown.300'
+                    _hover={{ bgColor: 'red.300' }}
+                >
                     <FaAngleRight/>
                 </IconButton>
             </Flex>
@@ -60,7 +72,7 @@ export default function RecentPortfolio() {
                         h="10px"
                         borderRadius="full"
                         cursor="pointer"
-                        bg={i === page ? "blue.500" : "gray.300"}
+                        bg={i === page ? "red.50" : "red.100"}
                         onClick={() => setPage(i)}
                         animate={{
                             scale: i === page ? 1.4 : 1,

@@ -3,15 +3,7 @@ import {
   Flex,
   Box,
   SimpleGrid,
-  Checkbox,
-  CheckboxGroup,
-  VStack,
-  Stack, 
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+  Heading,
   Text,
   HStack,
   Portal,
@@ -122,10 +114,14 @@ export default function PortfolioPage() {
           onValueChange={(e) => setSortOrder(e.value)}
         >
           <Select.HiddenSelect />
-          <Select.Label>Sort Projects</Select.Label>
-          <Select.Control>
-            <Select.Trigger>
-              <Select.ValueText placeholder="Select sort order" />
+          <Select.Label>
+            <Heading size='xl' color='yellow.50'>
+              Sort Projects
+            </Heading>
+          </Select.Label>
+          <Select.Control >
+            <Select.Trigger borderColor='red.300'>
+              <Select.ValueText placeholder="Select sort order" p={2}/>
             </Select.Trigger>
             <Select.IndicatorGroup>
               <Select.Indicator />
@@ -135,7 +131,7 @@ export default function PortfolioPage() {
             <Select.Positioner>
               <Select.Content>
                 {sortItems.items.map((item) => (
-                  <Select.Item item={item} key={item.value}>
+                  <Select.Item item={item} key={item.value} px={2}>
                     {item.label}
                     <Select.ItemIndicator />
                   </Select.Item>
@@ -155,8 +151,14 @@ export default function PortfolioPage() {
           </SimpleGrid>
           
           {/* Pagination buttons */}
-          <HStack>
-            <IconButton onClick={() => setPage((p) => Math.max(p - 1, 0))} isDisabled={page === 0}>
+          <HStack p={4}>
+            <IconButton 
+              onClick={() => setPage((p) => Math.max(p - 1, 0))} 
+              isDisabled={page === 0}
+              color='red.50'
+              bgColor='brown.300'
+              _hover={{ bgColor: 'red.300' }}
+            >
               <FaAngleLeft/>
             </IconButton>
             <Text>
@@ -165,6 +167,9 @@ export default function PortfolioPage() {
             <IconButton
               onClick={() => setPage((p) => Math.min(p + 1, maxPage - 1))}
               isDisabled={page >= maxPage - 1}
+              color='red.50'
+              bgColor='brown.300'
+              _hover={{ bgColor: 'red.300' }}
             >
               <FaAngleRight/>
             </IconButton>

@@ -7,8 +7,8 @@ export default function About() {
   return (
     <Flex w="full" height='100vh' min-height='500px' alignItems='center'>
         <Flex flexDirection='column'>
-            <Heading size='4xl'> 
-                <Highlight query="Me" styles={{ color: "teal.600" }}>
+            <Heading size='4xl' color='yellow.50'> 
+                <Highlight query="Me" styles={{ color: "red.100" }}>
                     About Me
                 </Highlight>
             </Heading>

@@ -6,7 +6,7 @@ export default function Experiences() {
 
   return (
     <Flex w="full" height='100vh' min-height='500px' justifyContent='center' alignItems='center' flexDirection='column' >
-        <Heading size='4xl'> 
+        <Heading size='4xl' color='yellow.50'> 
             Work Experiences
         </Heading>
         <Grid templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}  gap={16} p={16} alignItems='center' >

@@ -6,10 +6,10 @@ import TagCardDisplay from "./TagCardDisplay";
 export default function PortfolioCard({title, description, link, deploy, tags}) {
 
   return (
-    <Card.Root width="320px" height='320px' m={4} p={6}>
+    <Card.Root width="320px" height='320px' m={4} p={6} borderColor='red.200' bgColor='brown.300'>
       <Card.Body gap="2">
         <Card.Title mt="2">{title}</Card.Title>
-        <Card.Description>
+        <Card.Description py={2} color='yellow.200'>
           {description}
         </Card.Description>
         <TagCardDisplay tags={tags}/>
@@ -19,7 +19,12 @@ export default function PortfolioCard({title, description, link, deploy, tags}) 
           variant="outline" 
           href={link}
           isExternal
-          >
+          bgColor='red.300'
+          color='red.50'
+          p={2}
+          borderRadius='md'
+          _hover={{ bg: "red.200" }}
+        >
             Source
         </Link>
         {deploy ? 
@@ -27,6 +32,11 @@ export default function PortfolioCard({title, description, link, deploy, tags}) 
             variant="outline" 
             href={deploy}
             isExternal
+            bgColor='red.300'
+            color='red.50'
+            p={2}
+            borderRadius='md'
+            _hover={{ bg: "red.200" }}
             >
               Link
           </Link> 

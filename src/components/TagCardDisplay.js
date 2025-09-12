@@ -24,6 +24,7 @@ export default function TagCardDisplay({ tags }) {
         onClick={() => scroll("left")}
         aria-label="Scroll left"
         variant='ghost'
+        color='yellow.50'
       >
         <FaAngleLeft/>
       </IconButton>
@@ -48,6 +49,7 @@ export default function TagCardDisplay({ tags }) {
         onClick={() => scroll("right")}
         aria-label="Scroll right"
         variant='ghost'
+        color='yellow.50'
       >
         <FaAngleRight/>
       </IconButton>

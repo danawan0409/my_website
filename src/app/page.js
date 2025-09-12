@@ -37,7 +37,7 @@ export default function Main() {
           
           <Image src="/Logo.svg" p='4' id="top"/>
 
-          <Tabs.RootProvider lazyMount unmountOnExit width='70vw' fitted value={tab}>
+          <Tabs.RootProvider lazyMount unmountOnExit width='70vw' fitted value={tab} colorPalette='red'>
             <Tabs.List py={12}>
               {tabslst.map((item, index) => (
                 <Tabs.Trigger key={index} value={item.tab} fontSize={tab.value === item.tab ? 'lg' : 'md'}>
@@ -76,6 +76,8 @@ export default function Main() {
             position="fixed"
             bottom={16}
             right={16}
+            color='white'
+            bgColor='red.200'
           >
             <RiArrowUpCircleLine />
           </IconButton>

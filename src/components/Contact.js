@@ -29,7 +29,7 @@ export default function Contact() {
       <Tooltip content="dana.wan0409@gmail.com" showArrow interactive>
         <Link
           href="mailto:dana.wan0409@gmail.com"
-          _hover={{ color: "red.500" }}
+          _hover={{ color: "red.100" }}
         >
           <Icon as={IoIosMail} boxSize={8} />
         </Link>

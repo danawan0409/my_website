@@ -5,8 +5,8 @@ import { Checkbox } from "@chakra-ui/react"; // assuming your current checkbox c
 
 export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType }){
   return (
-    <Box w="250px" p={4} borderWidth="1px" borderRadius="lg" h="fit-content">
-      <Text fontWeight="bold" mb={2}>
+    <Box w="250px" p={4} borderWidth="1px" borderRadius="lg" h="fit-content" borderColor='red.300'>
+      <Text fontWeight="bold" mb={2} color='yellow.50'>
         Filter by Tags
       </Text>
 
@@ -24,10 +24,10 @@ export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType }){
                 onCheckedChange={(e) => toggleType(type, !!e.checked)}
               >
                 <Checkbox.HiddenInput />
-                <Checkbox.Control>
+                <Checkbox.Control _checked={{ bg: "red.200", borderColor: "red.100" }}>
                   <Checkbox.Indicator />
                 </Checkbox.Control>
-                <Checkbox.Label>{name}</Checkbox.Label>
+                <Checkbox.Label color='red.50'>{name}</Checkbox.Label>
               </Checkbox.Root>
 
               {/* Inner checkboxes = Tags */}
@@ -39,7 +39,7 @@ export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType }){
                     onCheckedChange={(e) => toggleTag(type, index, !!e.checked)}
                   >
                     <Checkbox.HiddenInput />
-                    <Checkbox.Control />
+                    <Checkbox.Control _checked={{ bg: "brown.100", borderColor: "brown.50" }} />
                     <Checkbox.Label>{tag.name}</Checkbox.Label>
                   </Checkbox.Root>
                 ))}
