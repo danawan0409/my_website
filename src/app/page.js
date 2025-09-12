@@ -1,11 +1,10 @@
 'use client'
 
-import styles from "./page.module.css";
 import { Provider } from "@/components/ui/provider"
 import { IconButton, Tabs, useTabs } from "@chakra-ui/react"
 import { Flex, Image, Box } from "@chakra-ui/react";
-import Home from "@/pages/home-page"; 
-import Portfolio from "@/pages/portfolio";
+import Home from "@/components/home-page"; 
+import Portfolio from "@/components/portfolio";
 import { RiGalleryView2, RiHome4Fill, RiArrowUpCircleLine  } from "react-icons/ri";
 import Contact from "@/components/Contact";
 import Head from "next/head";
@@ -13,25 +12,6 @@ import { useEffect } from "react";
 
 
 export default function Main() {
-  const tab = useTabs({
-    defaultValue: "home",
-  }); 
-
-  const tabslst = [
-    {
-      tab: 'home', 
-      name: 'Home', 
-      content: <Home />, 
-      image: <RiHome4Fill/>
-    }, 
-    {
-      tab: 'portfolio', 
-      name: 'Portfolio', 
-      content: <Portfolio/>,
-      image: <RiGalleryView2/>
-    }
-  ]
-
   return (
     <>
       <Head>
@@ -39,6 +19,22 @@ export default function Main() {
         <title>Dana Wan's Website</title>
       </Head>
       <Provider>
+        <TabsWithProvider/>
+
+      </Provider>
+    </>
+  );
+}
+
+
+function TabsWithProvider() {
+  const tab = useTabs({ defaultValue: "home" }); // ✅ now inside ChakraProvider
+  const tabslst = [
+    { tab: "home", name: "Home", content: <Home />, image: <RiHome4Fill /> },
+    { tab: "portfolio", name: "Portfolio", content: <Portfolio />, image: <RiGalleryView2 /> },
+  ];
+
+  return (
           <Flex width='full' alignItems='flex-start' justifyContent='space-between' px={16}>
             
             <Image src="/Logo.svg" p='4' id="top"/>
@@ -89,8 +85,5 @@ export default function Main() {
             </IconButton>
 
           </Flex>
-
-      </Provider>
-    </>
   );
 }
