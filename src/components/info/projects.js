@@ -1,3 +1,5 @@
+import { tags } from "./tagsList";
+
 export const projects = [
     {
         title: 'Stock Analysis', 
@@ -18,6 +20,12 @@ export const projects = [
         tags: ['node.js', 'react', 'html', 'css', 'javascript', 'docker', 'sql', 'postgresql', 'aws', 'figma', 'github-actions', 'cicd']
     }, 
     {
+        title: 'SynchroCare', 
+        description: 'Prototype for an initiative that aims to target the critical shortage of family physicians in Ontario by pairing people with openings near them.', 
+        link: 'https://www.figma.com/proto/WokjIIcoK7maohTKTa3nkl/SynchroCare?node-id=0-1&t=p2ZUxUNXzjFeEyp3-1', 
+        tags: ['figma']
+    }, 
+    {
         title: 'Web3 UofT Website', 
         description: 'Website for the Web3 UofT Student Group.', 
         link: 'https://github.com/web3-uoft/frontend', 
@@ -29,6 +37,12 @@ export const projects = [
         description: 'Online payment fraud detection and SMS spam detection.',
         link: 'https://github.com/danawan0409/ML-Projects-and-Notes-07-27',
         tags: ['python', 'numpy', 'pandas', 'matplotlib']
+    }, 
+    {
+        title: 'UNDER THE FALSE SKY | [Re]:Idealize', 
+        description: 'To protect themselves from savage beasts, humanity lives within mobile cities called the Arks. Visual Novel.', 
+        link: 'https://elduator.itch.io/under-the-false-sky-reidealize', 
+        tags: ['python', 'renpy']
     }, 
     {
         title: 'InnerCare', 
@@ -43,17 +57,35 @@ export const projects = [
         tags: ['react', 'html', 'css', 'javascript']
     }, 
     {
+        title: 'How to not become a queen', 
+        description: 'All is fair in love and war, after all. Visual Novel.', 
+        link: 'https://danapenguin.itch.io/how-not-to-become-a-queen', 
+        tags: ['python', 'renpy']
+    }, 
+    {
+        title: 'Yominokuni', 
+        description: 'One fateful night you are dragged into a world between life and death - a world illuminated only by a scarlet moon. Visual Novel.', 
+        link: 'https://elduator.itch.io/yominokuni', 
+        tags: ['python', 'renpy']
+    }, 
+    {
         title: 'Personal Website', 
         description: "The website you're looking at right now.", 
         link: 'https://github.com/danawan0409/my_website', 
-        tags: ['javascript', 'react', 'next.js', 'html', 'css', 'figma']
+        tags: ['javascript', 'react', 'next.js', 'html', 'css', 'figma', 'github-actions']
     }, 
     {
         title: 'Highland Haul', 
         description: 'Rideshare app for UofT, by UofT. EVolve Hackathon 2023 1st Place', 
-        link: '', 
+        link: 'https://www.figma.com/proto/OW0tX3bfjaIkHKe4dSrOPe/HIGHLAND-HAUL?node-id=0-1&t=lmpEF0vm7TieSRcg-1', 
         tags: ['figma']
     }, 
+    {
+        title: 'C Projects', 
+        description: '', 
+        link: 'https://github.com/danawan0409/C_projects', 
+        tags: ['c']
+    },
     {
         title: 'Student Events and Information App', 
         description: 'Android app that has a login/sign up system, check their post requirements, register for events, and see admin announcements.', 

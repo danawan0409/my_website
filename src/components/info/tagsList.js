@@ -24,7 +24,9 @@ export const tags = [
   { id: "twilio", name: "Twilio", type: "api" },
   { id: "junit", name: "JUnit", type: "testing" },
   { id: "andriod-studio", name: "Android Studio", type: "tool" },
-  { id: "java", name: "Java", type: "language" }
+  { id: "java", name: "Java", type: "language" }, 
+  { id: "renpy", name: "Ren'py", type: "game" }, 
+  { id: 'c', name: 'C', type: 'language'},
 ];
 
 export const tagTypes = [
@@ -37,6 +39,7 @@ export const tagTypes = [
   { type: "cicd", name: "CI/CD" },
   { type: "library", name: "Libraries" },
   { type: "api", name: "API" },
-  { type: "testing", name: "Testing" }
+  { type: "testing", name: "Testing" }, 
+  { type: "game", name: "Game" }
 ];
 
