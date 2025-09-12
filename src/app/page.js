@@ -16,7 +16,7 @@ export default function Main() {
     <>
       <Head>
         <link rel="icon" href="/Logo.svg"/>
-        <title>Dana Wan's Website</title>
+        <title>Dana Wan&apos;s Website</title>
       </Head>
       <Provider>
         <TabsWithProvider/>
