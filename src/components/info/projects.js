@@ -4,7 +4,7 @@ export const projects = [
     {
         title: 'Stock Analysis', 
         description: "Stock portfolio app with performance tracking and predictive analytics, focused on query optimization.",
-        link: 'https://github.com/danawan0409/b58-final', 
+        link: 'https://github.com/danawan0409/stockAnalysis', 
         tags: ['c++', 'sql', 'postgresql']
     }, 
     {
