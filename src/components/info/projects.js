@@ -2,6 +2,24 @@ import { tags } from "./tagsList";
 
 export const projects = [
     {
+        title: 'AI Robot Soccer Player', 
+        description: 'Lego EV3 Robot designed to play soccer autonomously against other robots in a predefined field. AI logic defined. For CSCC85.', 
+        link: 'https://github.com/Wengxin04/CSC85-RoboSoccer', 
+        tags: ['C']
+    },
+    {
+        title: 'Robot Localization', 
+        description: 'Localization of a Lego EV3 robot on a real, printed 2D map. Includes sensor calibration and motor control. For CSCC85.', 
+        link: 'https://github.com/jieyinggong/Robot_Localization', 
+        tags: ['C']
+    },
+    {
+        title: 'MARS Rover Lander Control', 
+        description: 'Explores sensor calibration and implements fault tolerant control system if multiple sensors and motors fail for a simulated MARS Rover Lander in C. For CSCC85.', 
+        link: 'https://github.com/Wengxin04/C85-Project1', 
+        tags: ['C']
+    },
+    {
         title: 'Stock Analysis', 
         description: "Stock portfolio app with performance tracking and predictive analytics, focused on query optimization.",
         link: 'https://github.com/danawan0409/stockAnalysis', 
