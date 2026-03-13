@@ -3,12 +3,14 @@
 import { Stack, Box, Text } from "@chakra-ui/react";
 import { Checkbox } from "@chakra-ui/react"; // assuming your current checkbox code works
 
-export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType }){
+export default function Filter({ tagTypes, tagGroups, toggleTag, toggleType, showTitle = true }){
   return (
-    <Box w="200px" p={4} borderWidth="1px" borderRadius="lg" h="fit-content" borderColor='red.300'>
-      <Text fontWeight="bold" mb={2} color='yellow.50'>
-        Filter by Tags
-      </Text>
+    <Box w={{ base: "100%", lg: "260px" }} p={{ base: 3, md: 4 }} borderWidth="1px" borderRadius="lg" h="fit-content" borderColor='red.300'>
+      {showTitle ? (
+        <Text fontWeight="bold" mb={2} color='yellow.50'>
+          Filter by Tags
+        </Text>
+      ) : null}
 
       <Stack align="flex-start" spacing={6}>
         {tagTypes.map(({ type, name }) => {

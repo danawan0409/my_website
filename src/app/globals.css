@@ -16,6 +16,14 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

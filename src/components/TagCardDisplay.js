@@ -2,8 +2,11 @@ import { Flex, IconButton, HStack } from "@chakra-ui/react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useRef } from "react";
 import TagCard from "./TagCard";
+import { tags as allTags } from "./info/tagsList";
 
-export default function TagCardDisplay({ tags }) {
+const tagNameMap = Object.fromEntries(allTags.map((tag) => [tag.id, tag.name]));
+
+export default function TagCardDisplay({ tags, onRemove, size = "lg" }) {
   const scrollRef = useRef();
 
   const scroll = (direction) => {
@@ -34,12 +37,20 @@ export default function TagCardDisplay({ tags }) {
         ref={scrollRef}
         spacing={3}
         overflowX="auto"
+        flex="1"
+        minW={0}
+        whiteSpace="nowrap"
         css={{
           "&::-webkit-scrollbar": { display: "none" },
         }}
       >
         {tags.map((tag, i) => (
-          <TagCard key={i} label={tag}/>
+          <TagCard
+            key={`${tag}-${i}`}
+            label={tagNameMap[tag] || tag}
+            size={size}
+            onRemove={onRemove ? () => onRemove(tag) : undefined}
+          />
         ))}
       </HStack>
 

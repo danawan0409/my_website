@@ -8,7 +8,7 @@ import IntroAnimation from "./intro-animation/IntroAnimation";
 export default function Intro() {
 
   return (
-    <Box w="full">
+    <Box w="full" overflow="hidden" display="flex" justifyContent="center">
         <IntroAnimation/>
     </Box>
   );

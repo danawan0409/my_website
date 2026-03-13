@@ -2,10 +2,19 @@ import { Flex, Link, Icon, } from "@chakra-ui/react";
 import { Tooltip } from "@/components/ui/tooltip"
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { getAssetPath } from "@/lib/getAssetPath";
 
 export default function Contact() {
   return (
-    <Flex gap={6} justify="center" align="center" py={12} ml={4}>
+    <Flex
+      direction={{ base: "row", lg: "column" }}
+      gap={{ base: 3, md: 4 }}
+      justify="center"
+      align="center"
+      py={{ base: 2, md: 3 }}
+      ml={{ base: 0, lg: 0 }}
+      wrap={{ base: "wrap", lg: "nowrap" }}
+    >
       <Tooltip content="LinkedIn" showArrow interactive>
         <Link
           href="https://www.linkedin.com/in/dana-wan/"
@@ -37,7 +46,7 @@ export default function Contact() {
 
       <Tooltip content="Open Resume" showArrow interactive>
         <Link
-          href="./resume.pdf"
+          href={getAssetPath('/resume.pdf')}
           isExternal
           _hover={{ color: "green.500" }}
         >
